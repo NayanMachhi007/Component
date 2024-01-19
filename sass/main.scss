@@ -2,12 +2,64 @@
 @import "var_color_bg_color";
 
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
+}
+
+
+.accordion-main {
+    width: 80%;
+    border: 1px solid black;
+
+    .accordion-iteam-main {
+        position: relative;
+        margin: 1rem 1rem;
+        background-color: green;
+
+        &:active .accordion-content {
+            height: 150px;
+        }
+
+        &:active .accordion-lable::before {
+            content: '-';
+        }
+
+        .accordion-lable {
+            position: relative;
+            padding: 1rem;
+            background-color: $accordion-primary-bgcolor;
+            color: $primary-heading-color;
+            cursor: pointer;
+
+            &::before {
+                content: '+';
+                position: absolute;
+                top: 50%;
+                right: 2rem;
+                transform: translateY(-50%);
+                font-size: 1rem;
+            }
+        }
+
+        .accordion-content {
+            position: relative;
+            background-color: $accordion-primary-bgcolor;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+
+            .primary-para {
+                padding: 2rem 2rem;
+            }
+
+        }
+    }
+
 }

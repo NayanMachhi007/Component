@@ -6,4 +6,46 @@
 
 html {
   font-size: 10px;
+}
+
+.accordion-main {
+  width: 80%;
+  border: 1px solid black;
+}
+.accordion-main .accordion-iteam-main {
+  position: relative;
+  margin: 1rem 1rem;
+  background-color: green;
+}
+.accordion-main .accordion-iteam-main:active .accordion-content {
+  height: 150px;
+}
+.accordion-main .accordion-iteam-main:active .accordion-lable::before {
+  content: "-";
+}
+.accordion-main .accordion-iteam-main .accordion-lable {
+  position: relative;
+  padding: 1rem;
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+.accordion-main .accordion-iteam-main .accordion-lable::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+.accordion-main .accordion-iteam-main .accordion-content {
+  position: relative;
+  background-color: green;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.accordion-main .accordion-iteam-main .accordion-content .primary-para {
+  padding: 2rem 2rem;
 }/*# sourceMappingURL=main.css.map */
