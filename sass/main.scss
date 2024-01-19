@@ -24,6 +24,8 @@ html {
 
         &:active .accordion-content {
             height: 150px;
+            display: block;
+        
         }
 
         &:active .accordion-lable::before {
@@ -54,6 +56,8 @@ html {
             overflow: hidden;
             transition: 0.5s;
             overflow-y: auto;
+            display: none;
+            
 
             .primary-para {
                 padding: 2rem 2rem;

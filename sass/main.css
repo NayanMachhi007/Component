@@ -19,6 +19,7 @@ html {
 }
 .accordion-main .accordion-iteam-main:active .accordion-content {
   height: 150px;
+  display: block;
 }
 .accordion-main .accordion-iteam-main:active .accordion-lable::before {
   content: "-";
@@ -45,6 +46,7 @@ html {
   overflow: hidden;
   transition: 0.5s;
   overflow-y: auto;
+  display: none;
 }
 .accordion-main .accordion-iteam-main .accordion-content .primary-para {
   padding: 2rem 2rem;
