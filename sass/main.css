@@ -17,13 +17,6 @@ html {
   margin: 1rem 1rem;
   background-color: green;
 }
-.accordion-main .accordion-iteam-main:active .accordion-content {
-  height: 150px;
-  display: block;
-}
-.accordion-main .accordion-iteam-main:active .accordion-lable::before {
-  content: "-";
-}
 .accordion-main .accordion-iteam-main .accordion-lable {
   position: relative;
   padding: 1rem;

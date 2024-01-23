@@ -22,15 +22,7 @@ html {
         margin: 1rem 1rem;
         background-color: green;
 
-        &:active .accordion-content {
-            height: 150px;
-            display: block;
-        
-        }
-
-        &:active .accordion-lable::before {
-            content: '-';
-        }
+    
 
         .accordion-lable {
             position: relative;
@@ -57,7 +49,7 @@ html {
             transition: 0.5s;
             overflow-y: auto;
             display: none;
-            
+
 
             .primary-para {
                 padding: 2rem 2rem;
