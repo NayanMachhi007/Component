@@ -38,9 +38,13 @@ html {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
-  overflow-y: auto;
-  display: none;
 }
 .accordion-main .accordion-iteam-main .accordion-content .primary-para {
   padding: 2rem 2rem;
+}
+.accordion-main .accordion-iteam-main.active .accordion-content {
+  height: 120px;
+}
+.accordion-main .accordion-iteam-main.active .accordion-lable::before {
+  content: "-";
 }/*# sourceMappingURL=main.css.map */

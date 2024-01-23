@@ -22,8 +22,6 @@ html {
         margin: 1rem 1rem;
         background-color: green;
 
-    
-
         .accordion-lable {
             position: relative;
             padding: 1rem;
@@ -47,15 +45,25 @@ html {
             height: 0;
             overflow: hidden;
             transition: 0.5s;
-            overflow-y: auto;
-            display: none;
-
 
             .primary-para {
                 padding: 2rem 2rem;
             }
 
         }
-    }
 
+        &.active {
+            .accordion-content {
+                height: 120px;
+            }
+
+            .accordion-lable {
+                &::before {
+                    content: '-';
+                }
+            }
+        }
+
+
+    }
 }
