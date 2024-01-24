@@ -47,4 +47,7 @@ html {
 }
 .accordion-main .accordion-iteam-main.active .accordion-lable::before {
   content: "-";
+}
+.accordion-main .active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
