@@ -1,3 +1,22 @@
+.primary-para {
+  font-size: 1.3rem;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.intro-para {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.img {
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +29,19 @@ html {
 
 .accordion-main {
   width: 80%;
-  border: 1px solid black;
+  margin: auto;
 }
 .accordion-main .accordion-iteam-main {
   position: relative;
   margin: 1rem 1rem;
-  background-color: green;
 }
 .accordion-main .accordion-iteam-main .accordion-lable {
   position: relative;
   padding: 1rem;
-  background-color: green;
+  background-color: #896c4c;
   color: black;
   cursor: pointer;
+  border-bottom: 1px solid black;
 }
 .accordion-main .accordion-iteam-main .accordion-lable::before {
   content: "+";
@@ -34,7 +53,6 @@ html {
 }
 .accordion-main .accordion-iteam-main .accordion-content {
   position: relative;
-  background-color: green;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
@@ -50,4 +68,50 @@ html {
 }
 .accordion-main .active {
   display: block;
+}
+
+.signpost-iteam {
+  margin: 20rem auto;
+  width: 33.33%;
+  position: relative;
+}
+.signpost-iteam .signpost-img {
+  background-image: url(/images/signpost-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.signpost-iteam .signpost-des {
+  height: 50px;
+  padding: 0.7rem 0.5rem;
+  position: absolute;
+  bottom: 0;
+  background: #896c4c;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.signpost-iteam .signpost-des:hover {
+  display: block;
+  height: 150px;
+}
+
+.tabs-main-block {
+  padding: 10rem 0;
+  background-color: #896c4c;
+}
+.tabs-main-block .tab-sub-block .tab .buttonlinks {
+  background-color: antiquewhite;
+  color: black;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.7rem;
+}
+.tabs-main-block .tab-sub-block .tab .buttonlinks.active {
+  background-color: rgb(252, 210, 156);
+  color: black;
+}
+.tabs-main-block .tab-sub-block .btncontent {
+  margin: 20px 0;
 }/*# sourceMappingURL=main.css.map */

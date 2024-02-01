@@ -1,73 +1,128 @@
 @import "mixing_common_css_code";
 @import "var_color_bg_color";
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
-
+// Accordion
 .accordion-main {
-    width: 80%;
-    border: 1px solid black;
+  width: 80%;
+  margin: auto;
 
-    .accordion-iteam-main {
-        position: relative;
-        margin: 1rem 1rem;
-        background-color: green;
+  .accordion-iteam-main {
+    position: relative;
+    margin: 1rem 1rem;
 
-        .accordion-lable {
-            position: relative;
-            padding: 1rem;
-            background-color: $accordion-primary-bgcolor;
-            color: $primary-heading-color;
-            cursor: pointer;
+    .accordion-lable {
+      position: relative;
+      padding: 1rem;
+      background-color: #896c4c;
 
-            &::before {
-                content: '+';
-                position: absolute;
-                top: 50%;
-                right: 2rem;
-                transform: translateY(-50%);
-                font-size: 1rem;
-            }
+      color: $primary-heading-color;
+      cursor: pointer;
+      border-bottom: 1px solid black;
+
+      &::before {
+        content: "+";
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        font-size: 1rem;
+      }
+    }
+
+    .accordion-content {
+      position: relative;
+
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+
+      .primary-para {
+        padding: 2rem 2rem;
+      }
+    }
+
+    &.active {
+      .accordion-content {
+        height: 120px;
+      }
+
+      .accordion-lable {
+        &::before {
+          content: "-";
         }
+      }
+    }
+  }
 
-        .accordion-content {
-            position: relative;
-            background-color: $accordion-primary-bgcolor;
-            height: 0;
-            overflow: hidden;
-            transition: 0.5s;
+  .active {
+    display: block;
+  }
+}
 
-            .primary-para {
-                padding: 2rem 2rem;
-            }
+// Sign post
+.signpost-iteam {
+  margin: 20rem auto;
+  width: 33.33%;
+  position: relative;
 
-        }
+  .signpost-img {
+    background-image: url(/images/signpost-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
 
+  .signpost-des {
+    height: 50px;
+    padding: 0.7rem 0.5rem;
+    position: absolute;
+    bottom: 0;
+    background: #896c4c;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .signpost-des {
+    &:hover {
+      display: block;
+      height: 150px;
+    }
+  }
+}
+
+// Tab section
+.tabs-main-block {
+  padding: 10rem 0;
+  background-color: #896c4c;
+  .tab-sub-block {
+    .tab {
+      .buttonlinks {
         &.active {
-            .accordion-content {
-                height: 120px;
-            }
-
-            .accordion-lable {
-                &::before {
-                    content: '-';
-                }
-            }
+          background-color: rgb(252, 210, 156);
+          color:black;
         }
-
-
+        background-color: antiquewhite;
+        color: black;
+        padding: 1rem 2rem;
+        border: none;
+        font-size: 1.7rem;
+      }
     }
 
-    .active {
-        display: block;
+    .btncontent{
+        margin:20px 0;
     }
+  }
 }
