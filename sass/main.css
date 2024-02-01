@@ -119,7 +119,7 @@ html {
 
 .videopop {
   margin: 20rem;
-  background-image: url(/images/signpost-1.jpg);
+  background-image: url(../images/signpost-1.jpg);
   height: 300px;
   width: 300px;
   margin: 0 auto;
